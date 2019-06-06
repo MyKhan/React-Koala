@@ -1,0 +1,186 @@
+//village
+class Koala extends React.Component {
+  render() {
+    return (
+      <Box/>
+    )
+  }
+}
+
+//neighborhood
+class Box extends React.Component {
+  render() {
+    return (
+     <div className="box">
+       <EarLeft/>
+       <EarRight/>
+       <EyeLeft/>
+       <EyeRight/>
+       <Head/>
+       <Nose/>
+       <HairLeft/>
+       <HairRight/>
+        
+       <Saying />
+        
+     </div>
+    )
+  }
+}
+
+//blocks
+class EarLeft extends React.Component {
+  render() {
+    return (
+      <div>
+        <OuterEarLeft/>
+        <InnerEarLeft/>
+      </div>
+    )
+  }
+}
+
+class EarRight extends React.Component {
+  render() {
+    return (
+      <div>
+        <OuterEarRight/>
+        <InnerEarRight/>
+      </div>
+    )
+  }
+}
+
+class EyeLeft extends React.Component {
+  render() {
+    return (
+      <div>
+        <OuterEyeLeft/>
+        <PupilLeft/>
+      </div>
+    )
+  }
+}
+class EyeRight extends React.Component {
+  render() {
+    return (
+      <div>
+        <OuterEyeRight/>
+        <PupilRight/>
+      </div>
+    )
+  }
+}
+
+//houses
+class Head extends React.Component {
+  render() {
+    return (
+      <div className="head"></div>
+    )
+  }
+}
+
+class Nose extends React.Component {
+  render() {
+    return (
+      <div className="nose"></div>
+    )
+  }
+}
+
+class HairLeft extends React.Component {
+  render() {
+    return (
+      <div className="hair-left"></div>
+    )
+  }
+}
+
+class HairRight extends React.Component {
+  render() {
+    return (
+      <div className="hair-right"></div>
+    )
+  }
+}
+
+class OuterEarRight extends React.Component {
+  render() {
+    return (
+      <div className="outer-ear-right"></div>
+    )
+  }
+}
+
+class InnerEarRight extends React.Component {
+  render() {
+    return (
+      <div className="inner-ear-right"></div>
+    )
+  }
+}
+
+class OuterEarLeft extends React.Component {
+  render() {
+    return (
+      <div className="outer-ear-left"></div>
+    )
+  }
+}
+
+class InnerEarLeft extends React.Component {
+  render() {
+    return (
+      <div className="inner-ear-left"></div>
+    )
+  }
+}
+
+class OuterEyeLeft extends React.Component {
+  render() {
+    return (
+      <div className="outer-eye-left"></div>
+    )
+  }
+}
+
+class PupilLeft extends React.Component {
+  render() {
+    return (
+      <div className="pupil-left"></div>
+    )
+  }
+}
+
+class OuterEyeRight extends React.Component {
+  render() {
+    return (
+      <div className="outer-eye-right"></div>
+    )
+  }
+}
+
+class PupilRight extends React.Component {
+  render() {
+    return (
+      <div className="pupil-right"></div>
+    )
+  }
+}
+
+class Saying extends React.Component {
+  render (){
+    return(
+      <div className="saying">
+        <h4>"In this world that we live in, a koala is all you need. I need one too," says the Koala, in despair.</h4>
+      </div>
+    )
+  }
+}
+
+//"inject" to DOM
+ReactDOM.render(
+  <Koala/>,
+  document.getElementById('koala')
+);
