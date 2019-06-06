@@ -1,4 +1,4 @@
-//village
+
 class Koala extends React.Component {
   render() {
     return (
@@ -7,7 +7,6 @@ class Koala extends React.Component {
   }}
 
 
-//neighborhood
 class Box extends React.Component {
   render() {
     return (
@@ -28,7 +27,6 @@ class Box extends React.Component {
   }}
 
 
-//blocks
 class EarLeft extends React.Component {
   render() {
     return (
@@ -72,7 +70,6 @@ class EyeRight extends React.Component {
   }}
 
 
-//houses
 class Head extends React.Component {
   render() {
     return (
@@ -179,7 +176,6 @@ class Saying extends React.Component {
   }}
 
 
-//"inject" to DOM
 ReactDOM.render(
 React.createElement(Koala, null),
 document.getElementById('koala'));
